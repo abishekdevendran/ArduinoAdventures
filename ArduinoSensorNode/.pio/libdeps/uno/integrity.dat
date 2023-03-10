@@ -1,0 +1,5 @@
+adafruit/DHT sensor library@^1.4.4
+adafruit/Adafruit Unified Sensor@^1.1.9
+bblanchon/ArduinoJson@^6.20.1
+worldfamouselectronics/PulseSensor Playground@^1.7.0
+ericksimoes/Ultrasonic@^3.0.0
