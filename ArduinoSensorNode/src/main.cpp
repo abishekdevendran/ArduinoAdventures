@@ -15,7 +15,7 @@ const int pulseLED = 7;
 int pulseSensorThreshold = 550;
 int pulseBPM= 0;
 
-Ultrasonic ultrasonic1(9, 10);
+Ultrasonic ultrasonic1(9, 10); //trig, echo
 int distance = 0;
 int heartrate = 0;
 
