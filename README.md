@@ -2,6 +2,8 @@
 
 This project is a real-time monitor that displays heart rate and distance readings on a webpage using an ESP8266 WiFi module and a WebSocket connection. It uses an Arduino sketch to read sensor data from an external device and sends the data over WiFi to the client's web browser.
 
+[![wakatime](https://wakatime.com/badge/github/abishekdevendran/ArduinoAdventures.svg)](https://wakatime.com/badge/github/abishekdevendran/ArduinoAdventures)
+
 ## Components Required
 
 - ESP8266 WiFi module
