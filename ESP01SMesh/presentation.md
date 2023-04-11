@@ -4,7 +4,7 @@ marp: true
 paginate: true
 author: Abishek
 header: Data for Edge-based microservices
-footer: Team 12
+footer: Team 18
 transition: slide
 ---
 
@@ -35,7 +35,7 @@ header,footer{
 </style>
 <h1 id="titleH1">Data for Edge-Based Microservices</h1>
 <h2 id="titleH2">IoT Phase-2 Project</h2>
-<h3>Team 12</h3>
+<h3>Team 18</h3>
 
 ---
 
@@ -48,20 +48,70 @@ header,footer{
 - Context aware sensor data is aggregated at MQTT broker.
 
 ---
+
 # Networking Aspect
+
 ![ESP Specs](img1.png)
 
 ---
+
 # Networking Aspect
+
 - ESP-MESH is a protocol used to form a self-forming and self-healing network.
 - It is secure by design as it is based on IEEE 802.11(WiFi) and can use WPA2.
 - Each Node turns on both Access Point (AP) and Station (STA) modes to form the network. The Protocol also updates and maintains routing tables and physoical topology of the network itself on each node.
 
 ---
-# Algorithm Aspect
 
+# Algorithm Aspect
 ---
+
 # MQTT Aspect
-- Program exists in such a way that connection is established to *HIVEMQ* (Cloud MQTT server). If it fails, the connection falls back to local MQTT server running on the gateway itself.
+
+- Program exists in such a way that connection is established to _HIVEMQ_ (Cloud MQTT server). If it fails, the connection falls back to local MQTT server running on the gateway itself.
 - Cloud access should be secure, so generated SSL/TLS certs are loaded locally on the bridge, which synchronises time from the internet to every node on the network. This ensures the secure connection isn't rejected by the remote broker.
 - Bridge subscribed to all channels, applications subscribe to the channel of their preference.
+
+---
+# Code Aspect
+![h:500](img7.png)
+
+---
+# Code Aspect
+![h:512](img8.png)
+
+---
+
+# Demonstrations
+
+---
+
+## Connects to gateway
+
+![h:512](img3.png)
+
+---
+
+## MQTT Broker on gateway
+
+![Help](img4.png)
+![Help](img5.png)
+
+---
+
+## MQTT Broker on gateway
+
+![Help](img6.png)
+
+---
+
+## MQTT Broker on the cloud (HiveMQ)
+
+![h:512](img2.png)
+
+___
+# Team 12
+#### D Abishek (CS20B1064)
+#### Nitish Vasanth (CS20B1068)
+#### Ryan (u too bru :)
+#### Varshith RV (forgor roll lmao)
